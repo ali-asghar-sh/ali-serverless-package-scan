@@ -3,7 +3,8 @@ run-name: Running Terraform Checks by ${{ github.actor }}
 
 on:
   push:
-  workflow_dispatch:
+    branches:
+    - main # Or your desired branch name
 
 jobs:
   Initial-Checks:
